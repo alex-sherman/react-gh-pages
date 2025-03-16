@@ -153,7 +153,12 @@ At this point, the React app's `package.json` file includes a property named `ho
         "build": "react-scripts build",
     ```
 
-At this point, the  React app's `package.json` file includes deployment scripts.
+For a custom domain use:
+```
+"deploy": "gh-pages -d build --cname custom-domain.com",
+```
+
+At this point, the React app's `package.json` file includes deployment scripts.
 
 ### 6. Add a "remote" that points to the GitHub repository
 
@@ -233,7 +238,7 @@ In this step, I'll show you how you can store the source code of the React app o
 
 1. [The official `create-react-app` deployment guide](https://create-react-app.dev/docs/deployment/#github-pages)
 2. [GitHub blog: Build and deploy GitHub Pages from any branch](https://github.blog/changelog/2020-09-03-build-and-deploy-github-pages-from-any-branch/)
-3. [Preserving the `CNAME` file when using a custom domain](https://github.com/gitname/react-gh-pages/issues/89#issuecomment-1207271670)
+3. [Preserving the `CNAME` file when using a custom domain](https://github.com/gitname/react-gh-pages/issues/89#issuecomment-2727185506)
 
 # Notes
 
